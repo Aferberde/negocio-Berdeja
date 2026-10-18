@@ -2,8 +2,8 @@
 
 - **Apellidos:** Berdeja Caquiva
 - **Nombres:** Adriana Fernanda
-- **Paralelo:** [Escribe aquí tu paralelo, ej. A]
-- **CI:** [Escribe aquí tu CI]
+- **Paralelo:** B
+- **CI:** 12766799 LP
 - **Fecha:** 18 de octubre de 2026
 
 ## Estado del Proyecto
