@@ -13,3 +13,13 @@ En las arquitecturas REST, los métodos HTTP definen las acciones que se pueden 
   "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
   "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum..."
 }
+## 2. POST (Crear recurso)
+- **Propósito:** Enviar datos al servidor para crear un nuevo recurso.
+- **Ejemplo Endpoint:** `POST /posts`
+- **Cuerpo de Solicitud (Payload):**
+```json
+{
+  "title": "Nuevo Artículo de Prueba",
+  "body": "Contenido del artículo creado para la práctica.",
+  "userId": 1
+}
