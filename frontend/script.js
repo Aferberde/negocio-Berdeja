@@ -28,3 +28,14 @@ searchBtn.addEventListener('click', () => {
             pokemonCard.innerHTML = `<p style="color: red;">${error.message}</p>`;
         });
 });
+function renderPokemon(data) {
+    const types = data.types.map(t => t.type.name).join(', ');
+    
+    pokemonCard.innerHTML = `
+        <h2>${data.name.toUpperCase()} (#${data.id})</h2>
+        <img src="${data.sprites.front_default}" alt="${data.name}">
+        <p><strong>Tipo:</strong> ${types}</p>
+        <p><strong>Altura:</strong> ${data.height / 10} m</p>
+        <p><strong>Peso:</strong> ${data.weight / 10} kg</p>
+    `;
+}
