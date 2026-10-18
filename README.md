@@ -1,10 +1,12 @@
-# Práctica 1 Auxiliatura Programación Web III
+# Práctica Programación Web III
 
 - **Apellidos:** Berdeja Caquiva
 - **Nombres:** Adriana Fernanda
-- **Paralelo:** B
-- **CI:** 12766799 LP
+- **Paralelo:** A
+- **CI:** 12345678
 - **Fecha:** 18 de octubre de 2026
 
-## Estado del Proyecto
-El proyecto está finalizado y documentado en la rama feature/8-docs-final.
+---
+
+## Modificación Especial
+Linea para generar conflicto obligatorio.
