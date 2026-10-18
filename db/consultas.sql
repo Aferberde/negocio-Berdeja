@@ -23,3 +23,20 @@ SELECT c.nombre AS categoria, COUNT(p.id) AS total_productos
 FROM categorias c
 LEFT JOIN productos p ON c.id = p.categoria_id
 GROUP BY c.id, c.nombre;
+
+-- 5. Listar el detalle completo de un pedido con nombres de productos (JOINs múltiples)
+SELECT dp.pedido_id, p.nombre AS producto, dp.cantidad, dp.precio_unitario, (dp.cantidad * dp.precio_unitario) AS subtotal
+FROM detalle_pedido dp
+INNER JOIN productos p ON dp.producto_id = p.id
+WHERE dp.pedido_id = 1;
+
+-- 6. Obtener las categorías con más de 1 producto (HAVING)
+SELECT c.nombre AS categoria, COUNT(p.id) AS total_productos
+FROM categorias c
+INNER JOIN productos p ON c.id = p.categoria_id
+GROUP BY c.id, c.nombre
+HAVING COUNT(p.id) >= 1;
+
+-- 7. Eliminar un producto sin ventas asociadas (DELETE + subconsulta)
+DELETE FROM productos 
+WHERE id NOT IN (SELECT DISTINCT producto_id FROM detalle_pedido) AND id = 999;
