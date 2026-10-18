@@ -57,4 +57,4 @@ json
 ## Diferencia Clave entre PUT y PATCH
 
 - **PUT:** Este realizara un remplazo total, incluso si un campo no es incluido en la peticion, este "faltante" se establecera como 'null' o lo eliminara del registro
-- **PATCH:** Refiere a un cambio parcial, solo de lo que se pide, a diferencia del put, solo cambiara lo que le pide sin manipular los campos restantes, osea no los afecta.
+- **PATCH:** Refiere a un cambio parcial, solo de lo que se pide, a diferencia del put, solo cambiara lo que le pide sin manipular los campos restantes, osea no afectara a los campos que no esten llenos pero si en el registro, algo que lo hace completamente diferente del patch.
